@@ -1,6 +1,5 @@
 import os
 from os import *
-from signal import pause
 
 while True:
     arg = input("Please type your input (type help to list commands):\n")
