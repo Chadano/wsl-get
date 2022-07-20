@@ -13,6 +13,7 @@ while True:
         print("lkc - Linux Kernel Compilation Devtools")
         print("omz - Oh-My-ZSH")
         print("qkvm - QEMU-KVM")
+        print("nala - Nala")
     if arg == "inst:gh":
         os.system('wget https://github.com/cli/cli/releases/download/v2.14.1/gh_2.14.1_linux_amd64.deb')
         os.system('sudo apt install ./gh_2.14.1_linux_amd64.deb')
@@ -25,5 +26,8 @@ while True:
         os.system('sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"')
     if arg == "inst:qkvm":
         os.system('sudo apt install qemu-kvm')
+    if arg == "inst:nala":
+        os.system('wget https://deb.volian.org/volian/pool/main/n/nala/nala_0.8.2_all.deb')
+        os.system('sudo apt install ./nala_0.8.2_all.deb')
     if arg == "exit":
         quit()
